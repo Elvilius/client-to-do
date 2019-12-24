@@ -2,8 +2,14 @@ sudo: false
 
 language: node_js
 node_js:
-  - 9
+  - 10.16.0
 
 branches:
   only:
     - master
+
+deploy:
+  provider: heroku
+  app: "to-do-simple"
+  api_key:
+    secure: "7aabf0d4-899b-4194-827e-38a76c91f789"
